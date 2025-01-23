@@ -108,6 +108,9 @@
 .mini_page h1{
   text-align: center;
 }
+.banner-photo img{
+  width: 100%;
+}
 .banner-photo img:hover{
  opacity: 2;
  cursor: pointer;
