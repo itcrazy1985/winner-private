@@ -98,72 +98,79 @@
 .h1:hover::after{
  width: 100%;
 }
-.mi-heade {
-   
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-    letter-spacing: normal;
-    transition: all 0.5s ease-in-out;
+.mini_page{
+  padding: 20px;
+  margin: 0 auto;
 }
-
-.mi-heade:hover {
-    color: #ff6a00;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 600;
+.mini_page .container{
+  text-align: center;
 }
-.mimi {
-    text-align: center; /* Centers the content inside the section */
+.mini_page h1{
+  text-align: center;
+}
+.banner-photo img:hover{
+ opacity: 2;
+ cursor: pointer;
+   filter: grayscale(40%);
+ 
+}
+.mini-photo{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+}
+.mini-photo img{
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.mini-title{
+  top: 25%;
+  left: 60%;
+  position: absolute;
+  display: flex;
+  justify-content:end;
+  flex-direction: column;
+  opacity: 1;
+}
+.mission-title{
+  top: 25%;
+  left: 10%;
+  position: absolute;
+  display: flex;
+  justify-content:end;
+  flex-direction: column;
+  opacity: 1;
+  max-width: 35%;
+}
+.mini-title h2,.mission-title h2{
+  color: #fff;
+  font-size: 40px;
+  font-family: initial;
+  font-weight: bold;
+}
+.mini-title p,.mission-title p{
+  color: #fff;
+  font-size: 18px;
+  text-align: left;
+}
+/* Responsive Design */
+ @media (max-width:767px){
+   .mini-title,.mission-title{
+    max-width: 100%;
+    align-items: center;
+    left: 0;
+    text-align: center;
+   }
+ }
+ @media (max-width:320px){
+  .mini-title p ,.mission-title p{
+    font-size: 12px;
   }
-
-  .first {
-    max-width: 100%; /* Ensures the image is medium-sized */
-    height: 90vh; /* Maintains the aspect ratio */
-    display: block; /* Centers the image horizontally */
-    margin: 20px auto;
-    box-shadow: 2px 2px 4px black;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Smooth transitions for hover effects */
-}
-
-.first:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 4px 4px 8px black; /* Enhanced shadow */
-    filter: brightness(1.15); /* Lightens the image slightly */
-}
-
-  
-  .second {
-    max-width: 100%; /* Ensures the image fits its container */
-    height: 95vh; /* Maintains the aspect ratio */
-    display: block; /* Centers the image horizontally */
-    margin: 20px auto;
-    box-shadow: 2px 2px 4px black;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Smooth hover transitions */
-}
-
-.second:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 4px 4px 10px black; /* More pronounced shadow */
-    filter: brightness(1.1); /* Lightens the image slightly */
-}
-
-  
-  .third {
-    max-width: 100%; /* Ensures the image is medium-sized */
-    height: 99vh; /* Maintains the aspect ratio */
-    display: block; /* Centers the image horizontally */
-    margin: 20px auto;
-    box-shadow: 2px 2px 4px black;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effects */
-}
-
-.third:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 4px 4px 8px black; /* Enhanced shadow */
-    filter: brightness(1.2); /* Slightly increases brightness */
-}
-
+ }
   .image-container {
     position: relative;
     display: inline-block;
@@ -181,31 +188,49 @@
     font-family: Arial, sans-serif; /* Choose a readable font */
     text-align: center;
   }
-  .containerr {
-  display: flex; /* Use flexbox for layout */
-  justify-content: space-around; /* Distribute space evenly between items */
-  align-items: center; /* Vertically align items */
-  background: black; /* Light background color */
-  padding: 10px 15px; /* Add some spacing inside the container */
-   border-radius: 10px;/* Rounded corners */
-  box-shadow: 2 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for a lifted effect */
-}
+    .containerr {
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    justify-content: space-around;
+    
+    text-align: center;
+    padding-right: 7%;
+    padding-left: 7%;
+    gap: 20px; /* Spacing between items */
+  }
 
-.containerr > div {
-  text-align: center; /* Center-align text inside each section */
-}
+  /* Each stat box */
+  .containerr div {
+    flex: 1 1 150px; /* Grow, shrink, and set minimum width */
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 4px #666;
+  }
 
-.containerr h1 {
-  margin: 0; /* Remove default margins for a clean look */
-  font-size: 3rem; /* Set a larger font size for the headings */
-  color: #fff; /* Dark color for contrast */
-}
+  /* Text styling */
+  .containerr h1 {
+    font-size: 2rem;
+  
+    margin: 10px 0 0 0;
+    color: #ff6a00;
+  }
 
-.containerr p {
-  margin: 10px 0 0; /* Add space above the paragraph */
-  font-size: 1.5rem; /* Standard font size for text */
-  color: #ff6a00; /* Lighter color for secondary text */
-}
+  .containerr p {
+    font-size: 20px;
+    margin: 15px 0 0 0;
+    color: #666;
+  }
+
+  /* Responsive behavior */
+  @media (max-width: 568px) {
+    .containerr {
+      flex-direction: column; /* Stack items on smaller screens */
+      align-items: center;
+    }
+  }
 .welcome{
   text-align: center;
   margin-top: 3%;
