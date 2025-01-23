@@ -109,6 +109,7 @@
   text-align: center;
 }
 .banner-photo img{
+  max-width: 92%;
   width: 100%;
 }
 .banner-photo img:hover{
@@ -167,6 +168,11 @@
     align-items: center;
     left: 0;
     text-align: center;
+    margin: 10px;
+   }
+   .mini-photo img,.mini-photo img{
+    border-radius: 0px;
+    width: 100%;
    }
  }
  @media (max-width:320px){
