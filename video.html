@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+<script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
+ <style>
+  .video-js {
+    border-radius: 12px; /* Adds a rounded border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a shadow */
+  }
+
+  .vjs-big-play-button {
+    background-color: #ff0000; /* YouTube red for the play button */
+    border: none;
+  }
+
+  .vjs-control-bar {
+    background: rgba(0, 0, 0, 0.8); /* Similar control bar style */
+  }
+</style>
+
+</head>
+<body>
+ <div class="moving-text">
+  Smart Learning at Thet Thet Winners Education
+</div>
+
+<style>
+  /* Gradient text with moving animation */
+  .moving-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff0000, #ff7300, #ffd200, #00ff00, #00bfff, #ff00ff);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorAnimation 5s linear infinite, moveAnimation 5s ease-in-out infinite;
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  /* Color gradient animation */
+  @keyframes colorAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* Moving text animation */
+  @keyframes moveAnimation {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+</style>
+
+  <div class="col-md-12 mt-2 school-video">
+  <video
+    id="my-video"
+    class="video-js vjs-big-play-centered img-thumbnail"
+    controls
+    preload="auto"
+    data-setup='{}'
+  >
+    <source src="./img/school.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+<script>
+  var player = videojs('my-video');
+
+  // Example: Adding custom functionality
+  player.on('ended', function () {
+    console.log('Video has ended');
+  });
+</script>
+
+</body>
+</html>
