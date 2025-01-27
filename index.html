@@ -4,12 +4,12 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Thet Thet Winners Education</title>
- <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/styles.css">
  <link rel="stylesheet" href="./css/style.css">
  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 </head>
 <body>
-<audio id="audio" src="./audios/song.mp3" loop></audio>
+<audio id="audio" src="./audios/song.mp3" loop muted></audio>
 <!-- nav -->
 <nav class="navbar navbar-expand-lg navbar-light ">
   <div class="container">
@@ -45,7 +45,7 @@
 <header class="main-header">
   <div class="header-container">
     <div class="background-header">
-      <video src="./img/school_1.mp4" autoplay muted loop></video>
+      <video src="./img/background.mp4" autoplay muted loop></video>
       <div class="video-titles">
          <!-- <div class="moving-text text-center">
           Smart Learning at Thet Thet Winners Education
@@ -58,35 +58,119 @@
     </div>
   </div>
 </header>
- <section class="school_activity_page">
+ <section class="school_activity_page" id="school_activity">
   <div class="container">
-    <h2 class="text-bold">ကျောင်းတွင်းလုပ်ရှာမူ</h2>
-    <div class="row school-activity-photos align-items-center mt-4">
-      <div class="col-md-4">
-      <img src="./img/school_activity.jpg" class="img-thumbnail">
+    <h2 class="text-bold">School <span style="color: #ff6a00;">Activity</span></h2>
+    <div class="row school-activity-photos align-items-center mt-3">
+      <div class="col-md-4 mt-3">
+          <img src="./img/school_activity.jpg" class="img-thumbnail">
       </div>    
-      <div class="col-md-4">
-      <img src="img/school_activity(1).jpg" class="img-thumbnail">
+      <div class="col-md-4 mt-3">
+          <img src="img/school_activity(1).jpg" class="img-thumbnail">
       </div> 
-      <div class="col-md-4">
-      <img src="img/school_activity(2).jpg" class="img-thumbnail">
-      </div>   
+      <div class="col-md-4 mt-3">
+          <img src="img/school_activity(2).jpg" class="img-thumbnail">
+      </div>
+      <div class="col-md-4 mt-3">
+          <img src="img/school_activity(3).jpg" class="img-thumbnail">
+      </div>
+      <div class="col-md-4 mt-3">
+          <img src="img/school_activity(6).jpg" class="img-thumbnail">
+      </div>
+      <div class="col-md-4 mt-3">
+          <img src="img/school_activity(7).jpg" class="img-thumbnail">
+      </div>
+      <!-- See More Start -->
+       <div class="accordion-item mt-2">
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="row accordion-body">
+            <div class="col-md-4 mt-3">
+                <img src="img/school_activity(8).jpg" class="img-thumbnail">
+            </div>
+            <div class="col-md-4 mt-3">
+                <img src="img/school_activity(9).jpg" class="img-thumbnail">
+            </div>
+            <div class="col-md-4 mt-3">
+                <img src="img/school_activity(11).jpg" class="img-thumbnail">
+            </div>
+            <div class="col-md-4 mt-3">
+                <img src="img/school_activity(12).jpg" class="img-thumbnail">
+            </div>
+            <div class="col-md-4 mt-3">
+                <img src="img/school_activity(14).jpg" class="img-thumbnail">
+            </div>
+            <div class="col-md-4 mt-3">
+                <img src="img/school_activity(15).jpg" class="img-thumbnail">
+            </div>
+            <div class="col-md-4 mt-3">
+                <img src="img/school_activity(17).jpg" class="img-thumbnail">
+            </div>
+            <div class="col-md-4 mt-3">
+                <img src="img/school_activity(18).jpg" class="img-thumbnail">
+            </div>
+            <div class="col-md-4 mt-3">
+                <img src="img/school_activity(3).jpg" class="img-thumbnail">
+            </div>
+            <div class="col-md-4 mt-3">
+                <img src="img/school_activity(10).jpg" class="img-thumbnail">
+            </div>
+            <div class="col-md-4 mt-3">
+                <img src="img/school_activity(16).jpg" class="img-thumbnail">
+            </div>
+          </div>
+        </div>
+        <h2 class="accordion-header fs-3 mt-0">
+          <a type="button"  class="btn btn-danger border-0 collapsed text-decroation-none text-dark" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            See More.....
+          </a>
+        </h2>
+      </div>
+      <!-- see More -->     
     </div>
   </div>
 </section>
 <section class="school_activity_page">
   <div class="container">
-    <h2> အားကစားများ</h2>
-    <div class="row school-sports align-items-center mt-4">
-      <div class="col-md-4">
-      <img src="./img/sport.jpg" class="img-thumbnail">
+      <h2>School <span style="color:#ff6a00;">Sports</span></h2>
+    <div class="row school-sports align-items-center mt-3">
+      <div class="col-md-4 mt-3">
+          <img src="./img/sport.jpg" class="img-thumbnail">
       </div>    
-      <div class="col-md-4">
-      <img src="./img/sport(1).jpg" class="img-thumbnail">
+      <div class="col-md-4 mt-3">
+          <img src="./img/sport(1).jpg" class="img-thumbnail">
       </div> 
-      <div class="col-md-4">
-      <img src="./img/school_activity(2).jpg" class="img-thumbnail">
-      </div>   
+     <div class="col-md-4 mt-3">
+          <img src="./img/sport(2).jpg" class="img-thumbnail">
+      </div> 
+      <div class="col-md-4 mt-3">
+          <img src="./img/sport(3).jpg" class="img-thumbnail">
+      </div> 
+      <div class="col-md-4 mt-3">
+          <img src="./img/sport(4).jpg" class="img-thumbnail">
+      </div> 
+      <div class="col-md-4 mt-3">
+          <img src="./img/sport(5).jpg" class="img-thumbnail">
+      </div> 
+      <div class="accordion-item mt-2">
+        <div id="sport" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="row accordion-body">
+            <div class="col-md-4 mt-3">
+             <img src="./img/sport(6).jpg" class="img-thumbnail">
+            </div> 
+            <div class="col-md-4 mt-3">
+             <img src="./img/sport(7).jpg" class="img-thumbnail">
+            </div> 
+            <div class="col-md-4 mt-3">
+              <img src="./img/sport(8).jpg" class="img-thumbnail">
+            </div>
+          </div>
+        </div>
+        <h2 class="accordion-header fs-3 mt-0">
+          <a type="button"  class="btn btn-danger border-0 collapsed text-decroation-none text-dark" data-bs-toggle="collapse" data-bs-target="#sport" aria-expanded="false" aria-controls="sport">
+            See More.....
+          </a>
+        </h2>
+      </div> 
      <div class="mt-2 school-video">
        <video src="./img/school.mp4" controls class="img-thumbnail"></video>
       </div>
@@ -95,14 +179,283 @@
 </section>
 <section class="school_activity_page">
   <div class="container">
-    <h2>ပုဂံခရီးစဉ်များ</h2>
-    <div class="row bagan align-items-center mt-4">
-      <div class="col-md-6">
-      <img src="img/bagan.jpg" class="img-thumbnail">
+    <h2>School <span style="color: #ff6a00;">Trips</span></h2>
+    <div class="row school-travels align-items-center mt-3">
+      <div class="col-md-4 mt-3">
+        <img src="img/bagan(31).jpg" class="img-thumbnail">
+      </div>
+      <div class="col-md-4 mt-3">
+        <img src="img/bagan(40).png" class="img-thumbnail">
+      </div>
+      <div class="col-md-4 mt-3">
+        <img src="img/bagan(30).jpg" class="img-thumbnail">
       </div>    
-      <div class="col-md-6">
-      <img src="./img/bagan(1).jpg" class="img-thumbnail">
+      <div class="col-md-4 mt-3">
+        <img src="./img/bagan.png" class="img-thumbnail">
+      </div>
+      <div class="col-md-4 mt-3">
+        <img src="./img/bagan(17).jpg" class="img-thumbnail">
+      </div>
+      <div class="col-md-4 mt-3">
+        <img src="./img/bagan(15).jpg" class="img-thumbnail">
+      </div>
+      <div class="accordion-item mt-2">
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="row accordion-body">
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(2).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(3).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(4).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(5).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(6).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(7).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(8).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(9).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(10).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(11).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(12).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(13).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(16).jpg" class="img-thumbnail">
+            </div>     
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(18).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(19).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(20).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(21).jpg" class="img-thumbnail">
+            </div> 
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(23).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(24).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(25).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(26).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(27).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(28).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(29).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(1).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(2).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(32).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(33).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(34).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(35).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(36).jpg" class="img-thumbnail">
+            </div>    
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(37).jpg" class="img-thumbnail">
+            </div>
+            <div class="col-md-4 mt-3">
+              <img src="./img/bagan(39).jpg" class="img-thumbnail">
+            </div>
+          </div>
+        </div>
+        <h2 class="accordion-header fs-3 mt-0">
+          <a type="button"  class="btn btn-danger border-0 collapsed text-decroation-none text-dark" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            See More.....
+          </a>
+        </h2>
+      </div>        
+    </div>
+  </div>
+</section>
+<section class="school_activity_page">
+  <div class="container">
+    <h2>School <span style="color: #ff6a00;">Donation</span></h2>
+    <div class="row school-donation align-items-center mt-3">
+      <div class="col-md-4 mt-3">
+        <img src="img/donation.png" class="img-thumbnail">
       </div> 
+      <div class="col-md-4 mt-3">
+        <img src="img/donation(1).png" class="img-thumbnail">
+      </div>    
+      <div class="col-md-4 mt-3">
+        <img src="img/donation(2).png" class="img-thumbnail">
+      </div> 
+      <div class="col-md-4 mt-3">
+        <img src="img/donation(3).png" class="img-thumbnail">
+      </div>
+      <div class="col-md-4 mt-3">
+        <img src="img/donation(4).png" class="img-thumbnail">
+      </div>
+      <div class="col-md-4 mt-3">
+        <img src="img/donation(5).png" class="img-thumbnail">
+      </div> 
+      <div class="accordion-item mt-2">
+        <div id="donation" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="row accordion-body">
+            <div class="col-md-4 mt-3">
+              <img src="img/donation(6).png" class="img-thumbnail">
+            </div> 
+            <div class="col-md-4 mt-3">
+              <img src="img/donation(7).png" class="img-thumbnail">
+            </div> 
+            <div class="col-md-4 mt-3">
+              <img src="img/donation(8).png" class="img-thumbnail">
+            </div>
+            <div class="col-md-4 mt-3">
+              <img src="img/donation(10).png" class="img-thumbnail">
+            </div> 
+            <div class="col-md-4 mt-3">
+              <img src="img/donation(11).png" class="img-thumbnail">
+            </div> 
+            <div class="col-md-4 mt-3">
+              <img src="img/donation(12).png" class="img-thumbnail">
+            </div> 
+            <div class="col-md-4 mt-3">
+              <img src="img/donation(13).png" class="img-thumbnail">
+            </div> 
+            <div class="col-md-4 mt-3">
+              <img src="img/donation(14).png" class="img-thumbnail">
+            </div> 
+            <div class="col-md-4 mt-3">
+              <img src="img/donation(15).png" class="img-thumbnail">
+            </div>
+          </div>
+        </div>
+        <h2 class="accordion-header fs-3 mt-0">
+          <a type="button"  class="btn btn-danger border-0 collapsed text-decroation-none text-dark" data-bs-toggle="collapse" data-bs-target="#donation" aria-expanded="false" aria-controls="donation">
+            See More.....
+          </a>
+        </h2>
+      </div>
+    </div>  
+  </div>
+</section>
+<section class="school_activity_page">
+  <div class="container">
+    <h2>Marry <span style="color: #ff6a00;">Christmas</span></h2>
+    <div class="row school-christmas align-items-center mt-3">
+      <div class="col-md-4 mt-3">
+        <img src="img/marry_christmas.png" class="img-thumbnail">
+      </div>
+      <div class="col-md-4 mt-3">
+        <img src="img/marry_christmas(1).png" class="img-thumbnail">
+      </div>
+      <div class="col-md-4 mt-3">
+        <img src="img/marry_christmas(2).png" class="img-thumbnail">
+      </div>
+      <div class="col-md-4 mt-3">
+        <img src="img/marry_christmas(3).png" class="img-thumbnail">
+      </div>
+      <div class="col-md-4 mt-3">
+        <img src="img/marry_christmas(4).png" class="img-thumbnail">
+      </div>
+      <div class="col-md-4 mt-3">
+        <img src="img/marry_christmas(5).png" class="img-thumbnail">
+      </div>
+      <div class="accordion-item mt-2">
+        <div id="christmas" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="row accordion-body">
+            <div class="col-md-4 mt-3">
+              <img src="img/marry_christmas(6).png" class="img-thumbnail">
+            </div>
+            <div class="col-md-4 mt-3">
+                <img src="img/marry_christmas(7).png" class="img-thumbnail">
+            </div>
+          </div>
+        </div>
+        <h2 class="accordion-header fs-3 mt-0">
+          <a type="button"  class="btn btn-danger border-0 collapsed text-decroation-none text-dark" data-bs-toggle="collapse" data-bs-target="#christmas" aria-expanded="false" aria-controls="christmas">
+            See More.....
+          </a>
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="school_activity_page">
+  <div class="container">
+    <h2>School <span style="color: #ff6a00;">Taekwondo</span></h2>
+    <div class="row school-Taekwondo align-items-center mt-3">
+      <div class="col-md-4 mt-3">
+        <img src="img/Taekwondo.png" class="img-thumbnail">
+      </div>    
+      <div class="col-md-4 mt-3">
+        <img src="img/Taekwondo(1).png" class="img-thumbnail">
+      </div>
+      <div class="col-md-4 mt-3">
+        <img src="img/Taekwondo(2).png" class="img-thumbnail">
+      </div>
+      <div class="col-md-4 mt-3">
+        <img src="img/Taekwondo(3).png" class="img-thumbnail">
+      </div>
+      <div class="col-md-4 mt-3">
+        <img src="img/Taekwondo(4).png" class="img-thumbnail">
+      </div>
+      <div class="col-md-4 mt-3">
+        <img src="img/Taekwondo(5).png" class="img-thumbnail">
+      </div>
+      <div class="accordion-item mt-2">
+        <div id="Taekwondo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="row accordion-body">
+            <div class="col-md-4 mt-3">
+              <img src="img/Taekwondo(6).jpg" class="img-thumbnail">
+            </div> 
+            <div class="col-md-4 mt-3">
+              <img src="img/Taekwondo(7).jpg" class="img-thumbnail">
+            </div>
+          </div>
+        </div>
+        <h2 class="accordion-header fs-3 mt-0">
+          <a type="button"  class="btn btn-danger border-0 collapsed text-decroation-none text-dark" data-bs-toggle="collapse" data-bs-target="#Taekwondo" aria-expanded="false" aria-controls="Taekwondo">
+            See More.....
+          </a>
+        </h2>
+      </div>
     </div>
   </div>
 </section>
@@ -171,7 +524,6 @@
           <p class="image-text w-100">
             This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
           </p>
-        
       </div>
     </div>
     <!-- card 2 -->
@@ -304,8 +656,7 @@
     audio.play();
   };
 </script>
-<script src="sc.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" ></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" ></script>
+<script src="js/script.js"></script>
+<script src="js/script_1.js"></script>
 </body>
 </html>

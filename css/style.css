@@ -120,52 +120,17 @@
   flex-direction: column;
   opacity: 1;
   background-color: #ffffff3a;
-}
-  /* Gradient text with moving animation */
-  .moving-text {
-    margin-top: -180px;
-    font-size: 2.5rem;
-    font-weight: bold;
-    background: linear-gradient(90deg, #ff0000, #ff7300, #ffd200, #00ff00, #00bfff, #ff00ff);
-    background-size: 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: colorAnimation 5s linear infinite, moveAnimation 5s ease-in-out infinite;
-    text-align: center;
-    display: inline-block;
-    white-space: nowrap;
-  }
-
-  /* Color gradient animation */
-  @keyframes colorAnimation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
-  /* Moving text animation */
-  @keyframes moveAnimation {
-    0% {
-      transform: translateX(-100%);
-    }
-    50% {
-      transform: translateX(50%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-  .bagan div img{
+}.school-activity-photos .col-md-4 img ,
+.school-sports .col-md-4 img,
+.school-travels .col-md-4 img,
+.school-christmas .col-md-4 img,
+.school-donation .col-md-4 img,
+.school-Taekwondo .col-md-4 img
+{
     width: 100%;
-    height: 70vh;
+    height: 40vh;
     object-fit: cover;
-  }
+}
 .titles-items{
   padding: 30px;
   
@@ -188,11 +153,14 @@
   justify-content: center;
 }
 .school_activity_page h2{
-  color: #ff6a00;
+  color: #000;
   text-align: center;
-  margin: 10px;
-  font-size: 25px;
-  font-weight: bold;
+  margin: 20px;
+  font-size: 30px;
+
+}
+.accordion-header a{
+  text-decoration: none;
 }
 .mini_page{
   padding: 20px;
