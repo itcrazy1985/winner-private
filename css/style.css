@@ -453,3 +453,31 @@ h2 {
 .accordion{
   margin-top: 30px;
 }
+@media (max-width: 767px) {
+  .form-control {
+    width: 90%;
+    margin: 0 auto; /* Centers horizontally */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Ensures child elements stack */
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers child elements horizontally */
+  }
+
+  .form-container { /* Wrap the form in this container for better vertical centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height for proper centering */
+  }
+}
+
+@media (max-width: 767px) {
+  .myanmar {
+    margin: 0 auto; /* Centers the element horizontally */
+    display: block; /* Ensures it respects margin adjustments */
+    text-align: center; /* Optional, for centering inline content inside the element */
+  }
+}
+
+
