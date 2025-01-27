@@ -1659,7 +1659,7 @@
       }
       for (const element of triggerArray) {
         element.classList.toggle(CLASS_NAME_COLLAPSED, !isOpen);
-        element.setAttribute('', isOpen);
+        element.setAttribute('aria-expanded', isOpen);
       }
     }
 
