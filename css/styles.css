@@ -4829,12 +4829,12 @@ textarea.form-control-lg {
 }
 
 .badge {
-  --bs-badge-padding-x: 0.65em;
-  --bs-badge-padding-y: 0.35em;
-  --bs-badge-font-size: 0.75em;
+  background-color: #f28e63;
+  --bs-badge-padding-x: 0.68em;
+  --bs-badge-padding-y: 0.38em;
+  --bs-badge-font-size: 0.95em;
   --bs-badge-font-weight: 700;
   --bs-badge-color: #fff;
-  --bs-badge-border-radius: var(--bs-border-radius);
   display: inline-block;
   padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
   font-size: var(--bs-badge-font-size);
@@ -4844,7 +4844,8 @@ textarea.form-control-lg {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: var(--bs-badge-border-radius);
+  border-radius: 20px;
+  border: 3px solid #fff;
 }
 .badge:empty {
   display: none;
@@ -4852,7 +4853,8 @@ textarea.form-control-lg {
 
 .btn .badge {
   position: relative;
-  top: -1px;
+  top: -40px;
+  left: -15px;
 }
 
 .alert {
