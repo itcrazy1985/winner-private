@@ -538,13 +538,14 @@ h2 {
   display: block;
 }
 
-.admission-photo .card-text {
+.school-photo .card-text {
   position: absolute;
   top: 25%;
   left: 50%;
-  font-size: 100px;
+  font-family: initial;
+  font-size: 120px;
   transform: translate(-50%, -50%);
-  color: white;
+  color: rgb(150, 139, 139);
   z-index: 1;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for better readability */
