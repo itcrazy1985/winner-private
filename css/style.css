@@ -664,8 +664,12 @@ h2 {
   font-weight: 600;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   color: rgb(184, 164, 164);
-  
 } 
+@media (max-width:424px){
+  .contact-titles h1{
+    font-size: 50px;
+  }
+}
 .contact-compause h1{
   font-family: initial;
   text-align: center;
