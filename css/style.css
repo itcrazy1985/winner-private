@@ -529,8 +529,7 @@ h2 {
   height: 100%;
 }
 .school-life-titles h1{
-  position:inherit;
-  
+  position:relative;
   font-size: 120px;
   font-weight: bold;
   color: rgba(245, 245, 245, 0.788);
@@ -547,7 +546,7 @@ h2 {
 }
 .academic-logo img{
   margin: 0 auto;
- width: 280px;
+ width: 100%;
 }
 .academic-decrition p{
   text-align: justify;
@@ -746,5 +745,6 @@ h2 {
     margin-left: 20px;
   }
 }
-
-
+@media (max-width:320px){
+  
+}
