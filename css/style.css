@@ -3,7 +3,12 @@
     padding: 0;
     
 }
-
+ul,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
 .logo {
     width: 65px;
     color: hsla(32, 97%, 49%, 0.877);
@@ -474,28 +479,17 @@ h2 {
   font-size: 1rem;
   font-weight: 500;
 }
-
-
-.form-control,
-.form-select {
-  width: 100%;
-  font-size: 1rem;
+.form-group label{
+  font-weight: bold;
 }
-
-
-.form-stand {
-  width: 100%; 
-  margin: 0 auto; 
+.form-group input,.form-group textarea{
+  margin-top: 6px;
+  border-radius: 0px;
+  border: 1px solid #000;
 }
-
-@media (max-width: 767px) {
-  .form-select {
-    font-size: 0.9rem; 
-  }
+form .btn{
+  text-align: center;
 }
-
-
-
 /* School Life */
 .school-life-header{
   margin: 0 auto;
@@ -539,10 +533,6 @@ h2 {
 .descrition-detail{
   align-items: center;
   line-height: 30px;
-}
-.academic-decrition,
-.academic-logo{
-  padding: 50px;
 }
 .academic-logo img{
   margin: 0 auto;
@@ -731,7 +721,13 @@ h2 {
   border-top: 1px solid black; 
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-
+.link-item a{
+  color: #ff6a00;
+}
+.link-item{
+  padding: 0px;
+  margin: 0 auto;
+}
 @media (max-width:600px){
   .winner-pv{
     height: 13vh;
@@ -742,12 +738,6 @@ h2 {
 @media (max-width:1132px){
   .address{
     margin-left: 20px;
-  }
-}
-@media (max-width:767px){
-  .academic-decrition{
-    padding: 0px;
-    margin: 0 auto;
   }
 }
 @media (max-width:474px){
