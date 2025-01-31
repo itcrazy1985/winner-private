@@ -616,8 +616,7 @@ h2 {
 }
 .faci-container p {
     max-width: 100%;
-    text-align: center;
-   
+    text-align: justify;
     line-height: 2rem;
     margin-left: 10%;
     margin-right: 10%;
@@ -745,6 +744,19 @@ h2 {
     margin-left: 20px;
   }
 }
-@media (max-width:320px){
-  
+@media (max-width:767px){
+  .academic-decrition{
+    padding: 0px;
+    margin: 0 auto;
+  }
+}
+@media (max-width:474px){
+  .school-life-titles h1{
+    font-size: 60px;
+  }
+}
+@media (max-width:368px){
+  .school-life-titles h1{
+    text-align: center;
+  }
 }
