@@ -675,6 +675,13 @@ footer p{
   font-size: 16px;
   font-family: initial;
 }
+.top-position{
+  padding: 10px;
+  text-align: right;
+}
+.top-position a img{
+  width: 30px;
+}
 @media (max-width:600px){
   .winner-pv{
     height: 13vh;
